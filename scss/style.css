@@ -170,7 +170,7 @@ body {
   max-width: 70rem;
   margin: 0 auto;
   padding: 0 1.25rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -371,6 +371,10 @@ ol, li {
 }
 
 .carousel img {
-  position: absolute;
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 /*# sourceMappingURL=style.css.map */
