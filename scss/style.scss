@@ -124,7 +124,7 @@ nav {
     max-width: 70rem;
     margin: 0 auto;
     padding: 0 1.25rem;
-    font-family: 'Lato', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   
   * {
@@ -304,3 +304,9 @@ nav {
     background-image: url("../assets/back-arrow.svg");
     transform: rotate(180deg);
   }
+
+  .carousel img {
+    position: relative;
+    display: block;
+    width: fit-content;
+}
