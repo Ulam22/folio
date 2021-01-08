@@ -1,312 +1,86 @@
 @font-face {
-    font-family: "Tropikal";
-    src: url(Tropikal-Bold.otf) format("otf");
-    font-weight: bold;
+  font-family: "Tropikal";
+  src: url(Tropikal-Bold.otf) format("otf");
+  font-weight: bold;
 }
 
-$body-font: "Roboto", sans-serif;
+$body-font: "Montserrat", sans-serif;
 $header-font: "Montserrat", Verdana, sans-serif;
-$primary-color: #EEC8A5; 
-$accent-color: #F5E0BF;
+$primary-color: #eec8a5;
+$accent-color: #f5e0bf;
+$border: 1px solid #282725;
+$highlight: #428c90;
 $black: #282725;
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
 
-html {
-    font-size: 100%;
-    box-sizing: border-box;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: $primary-color;
+  box-sizing: border-box;
+  font-family: $body-font;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: $body-font;
-    font-weight: 300;
-    background: $primary-color;
-    color: $black;
-    line-height: 1.3;
-    font-size: 1.25rem;
-    
-}
-
 
 h1 {
-        text-align: center;
-        font-size: 25px;
-        font-family: $header-font;
-        font-weight: bold;
-        padding: 10px;
+  text-align: center;
+  font-family: $header-font;
+  font-size: 1.2rem;
+  padding: 20px 0 20px;
 }
 
 .container {
-background: $accent-color;
-border-radius: 15px;
-margin: 30px;
-border: 1px solid $black;
-}
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 1px solid $black;
-    padding: 15px 0 15px 0;
-    font-family: "Montserrat", Verdana, sans-serif;
+  margin: auto;
+  width: 90%;
+  border: $border;
+  background: $accent-color;
+  height: 65vh;
+  border-radius: 15px;
+  translate: 50, 50;
+  //position: relative;
+
+  a,
+  a:visited {
+    text-decoration: none;
+    color: $black;
+    font-family: $header-font;
     font-weight: 600;
-
-    a:first-child {
-        padding-left: 20px;
+  }
+  a:focus,
+  a:active {
+    font-weight: bold;
+  }
+  a:hover {
+    font-weight: bold;
+    color: $highlight;
+  }
+  nav {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    border-bottom: $border;
+    a {
+      padding: 0 5px 0;
     }
-    a:last-child{
-        padding-right: 20px;
-    }
-
-    a, a:visited {
-        text-decoration: none;
-        color: $black;
-    }
-    a:focus {
-        font-weight: bold;
-    }
-    a:hover {
-        font-weight: bold;
-        color: #428C90;
-    }
+  }
 }
 
-
-@keyframes tonext {
-    75% {
-      left: 0;
+footer {
+  position:fixed;
+  display: inline-block;
+  bottom:0;
+  text-align: center;
+  width:100%;
+  height: 80px;
+  background: $highlight;
+  
+    p, a, a:active, a:visited {
+      text-decoration: none;
+      color: $black;
+      font-weight: 500;
+      font-family: $body-font;
+      padding: 5px 0 5px 0; 
+      font-size: 18px;
+      display: inline-block;
     }
-    95% {
-      left: 100%;
-    }
-    98% {
-      left: 100%;
-    }
-    99% {
-      left: 0;
-    }
-  }
-  
-  @keyframes tostart {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: -300%;
-    }
-    98% {
-      left: -300%;
-    }
-    99% {
-      left: 0;
-    }
-  }
-  
-  @keyframes snap {
-    96% {
-      scroll-snap-align: center;
-    }
-    97% {
-      scroll-snap-align: none;
-    }
-    99% {
-      scroll-snap-align: none;
-    }
-    100% {
-      scroll-snap-align: center;
-    }
-  }
-  
-  body {
-    max-width: 70rem;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  * {
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent; /* thumb and track color */
-    scrollbar-width: 0px;
-  }
-  
-  *::-webkit-scrollbar {
-    width: 0;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-  }
-  
-  * {
-    -ms-overflow-style: none;
-  }
-  
-  ol, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .carousel {
-    position: relative;
-    padding-top: 75%;
-    
-    perspective: 100px;
-  }
-  
-  .carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    overflow-x: scroll;
-    counter-reset: item;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .carousel__slide {
-    position: relative;
-    flex: 0 0 100%;
-    width: 100%;
-    background-color: #f99;
-    counter-increment: item;
-  }
-  
-  .carousel__slide:nth-child(even) {
-    background-color: #99f;
-  }
-  
-  .carousel__slide:before {
-    content: counter(item);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-40%,70px);
-    color: #fff;
-    font-size: 2em;
-  }
-  
-  .carousel__snapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
-  }
-  
-  @media (hover: hover) {
-    .carousel__snapper {
-      animation-name: tonext, snap;
-      animation-timing-function: ease;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-    }
-  
-    .carousel__slide:last-child .carousel__snapper {
-      animation-name: tostart, snap;
-    }
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
-    .carousel__snapper {
-      animation-name: none;
-    }
-  }
-  
-  .carousel:hover .carousel__snapper,
-  .carousel:focus-within .carousel__snapper {
-    animation-name: none;
-  }
-  
-  .carousel__navigation {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-  }
-  
-  .carousel__navigation-list,
-  .carousel__navigation-item {
-    display: inline-block;
-  }
-  
-  .carousel__navigation-button {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #333;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    font-size: 0;
-    transition: transform 0.1s;
-  }
-  
-  .carousel::before,
-  .carousel::after,
-  .carousel__prev,
-  .carousel__next {
-    position: absolute;
-    top: 0;
-    margin-top: 37.5%;
-    width: 4rem;
-    height: 4rem;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    font-size: 0;
-    outline: 0;
-  }
-  
-  .carousel::before,
-  .carousel__prev {
-    left: -1rem;
-  }
-  
-  .carousel::after,
-  .carousel__next {
-    right: -1rem;
-  }
-  
-  .carousel::before,
-  .carousel::after {
-    content: '';
-    z-index: 1;
-    background-color:$accent-color;
-    background-size: 3.3rem 3.3rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: #fff;
-    font-size: 2.5rem;
-    line-height: 4rem;
-    text-align: center;
-    pointer-events: none;
-  }
-  
-  .carousel::before {
-    background-image: url("../assets/back-arrow.svg");
-  }
-  
-  .carousel::after {
-    background-image: url("../assets/back-arrow.svg");
-    transform: rotate(180deg);
-  }
-
-  .carousel img {
-    position: relative;
-    display: block;
-    width: fit-content;
 }
