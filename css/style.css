@@ -11405,6 +11405,13 @@ h3, .h3 {
   font-size: 3em;
 }
 
+#landing p {
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+}
+
 #landing .landing__content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -11427,13 +11434,6 @@ h3, .h3 {
 #landing .landing__content .h3 a:visited {
   color: #3a4fcd;
   text-decoration: none;
-}
-
-#landing .landing__content h3 p, #landing .landing__content .h3 p {
-  font-style: italic;
-  font-size: 14px;
-  text-align: center;
-  margin: auto;
 }
 
 #projects {
@@ -11518,6 +11518,9 @@ h3, .h3 {
   }
   #about .blurb {
     max-width: 90%;
+  }
+  #landing p {
+    opacity: 0;
   }
 }
 
