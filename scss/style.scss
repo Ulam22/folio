@@ -1,86 +1,127 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 @font-face {
   font-family: "Tropikal";
   src: url(Tropikal-Bold.otf) format("otf");
   font-weight: bold;
 }
 
-$body-font: "Montserrat", sans-serif;
-$header-font: "Montserrat", Verdana, sans-serif;
-$primary-color: #eec8a5;
-$accent-color: #f5e0bf;
-$border: 1px solid #282725;
-$highlight: #428c90;
-$black: #282725;
+$body-font: "Roboto Condensed", sans-serif;
+$header-font: "Tropikal", Verdana, sans-serif;
+$bg-color: #f8f5f2;
+$accent-color: #cbcddd;
+$border-style: 1px solid #232323;
+$border-rad: 13px;
+$highlight: #3a4fcd;
+$black: #232323;
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background: $primary-color;
+  background: $bg-color;
   box-sizing: border-box;
   font-family: $body-font;
 }
 
+li {
+  list-style: none;
+}
+
+a:active,
+a:focused {
+  text-decoration: none;
+  color: $black;
+}
+.navbar-nav {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-family: $header-font;
+  justify-content: end;
+  .nav-item .nav-link {
+    color: $black;
+    font-size: 2em;
+    &:hover,
+    &:active {
+      color: $highlight;
+    }
+  }
+}
+.container-fluid {
+  position: fixed;
+  top: 0;
+  .navbar-brand {
+    font-family: $header-font;
+    font-size: 2em;
+  }
+}
 h1 {
-  text-align: center;
+  left: 0;
   font-family: $header-font;
   font-size: 1.2rem;
-  padding: 20px 0 20px;
+  padding: 20px;
 }
 
-.container {
-  margin: auto;
-  width: 90%;
-  border: $border;
-  background: $accent-color;
-  height: 65vh;
-  border-radius: 15px;
-  translate: 50, 50;
-  //position: relative;
+h2 {
+  font-family: $header-font;
+  font-size: 4em;
+}
 
-  a,
-  a:visited {
-    text-decoration: none;
-    color: $black;
-    font-family: $header-font;
-    font-weight: 600;
+h3 {
+  font-family: $header-font;
+  font-size: 3em;
+}
+
+#landing {
+  .landing__content {
+    justify-content: center;
+    padding: 10rem 0 5rem;
+    h3 {
+      margin: auto;
+      text-align: center;
+
+      a,
+      a:visited {
+        color: $highlight;
+        text-decoration: none;
+      }
+
+      p {
+        font-style: italic;
+        font-size: 14px;
+        text-align: center;
+        margin: auto;
+      }
+      
+    }
   }
-  a:focus,
-  a:active {
-    font-weight: bold;
-  }
-  a:hover {
-    font-weight: bold;
-    color: $highlight;
-  }
-  nav {
-    padding: 10px 0 10px 0;
+}
+
+#projects {
+  padding: 5rem 0;
+  background-color: $accent-color;
+  h2 {
     text-align: center;
-    border-bottom: $border;
-    a {
-      padding: 0 5px 0;
+    padding: 35px 0;
+  }
+  .card {
+    max-width: 50em;
+    margin: auto;
+    padding: 15px 0;
+    background: transparent;
+    border: none;
+    h5 {
+      font-weight: bold;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: $border-rad;
+      border: $border-style;
     }
   }
-}
-
-footer {
-  position:fixed;
-  display: inline-block;
-  bottom:0;
-  text-align: center;
-  width:100%;
-  height: 80px;
-  background: $highlight;
-  
-    p, a, a:active, a:visited {
-      text-decoration: none;
-      color: $black;
-      font-weight: 500;
-      font-family: $body-font;
-      padding: 5px 0 5px 0; 
-      font-size: 18px;
-      display: inline-block;
-    }
 }
