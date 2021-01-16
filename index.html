@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    
+    <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+  <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+  <script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
   </head>
 
   <body>
@@ -46,7 +48,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a></li>
               <li class="nav-item">
-                <a class="nav-link" href="#resume">Resume</a></li>
+                <a class="nav-link" href="#footer">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/1OlWkSq9eWU7Qoy4E2g6cHjpxPuXMlwLd/view?usp=sharing">Resume</a></li>
          </ul>
           </div>
      </div>
@@ -55,14 +59,14 @@
       <h3>Hello, my name is <a href="#about">Shania</a>.<br> Welcome to my space.</h3>
       
       <img src="assets/avatar.png" class="rounded mx-auto d-block" alt="avatar persona" data-scroll/>        
-    <ion-icon name="chevron-down"></ion-icon></div>
-    
+      </div>
+    <i class="fas fa-chevron-down"></i>
     </section>
     <!-- Landing end -->
 
     <!--  Portfolio Start -->
     <section id="projects" data-scroll-container>
-        <h2 data-scroll data-scroll-speed="1">Portfolio</h2>
+        <h2 data-scroll data-scroll-speed="1">Projects</h2>
         <div class="card mb-3" data-scroll-section >
             <div class="row g-0">
               <div class="col-md-6">
@@ -70,7 +74,7 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">HackBeanpot</h5>
+                  <h5 class="card-title">HackBeanpot Core Member</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <button type="button" class="btn btn-outline-dark">Read More</button>
                 </div>
@@ -81,11 +85,11 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-6">
-                <img src="assets/one-down-landing.png" alt="One Down site redesign">
+                <img src="assets/one-down-landing.png" alt="One Down Web Design Internship">
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">One Down site redesign</h5>
+                  <h5 class="card-title">One Down Web Design Internship</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <button type="button" class="btn btn-outline-dark">Read More</button>
                 </div>
@@ -96,7 +100,7 @@
           <div class="card mb-3">
             <div class="row g-0">
               <div class="col-md-6">
-                <img src="assets/uip-cover.png" alt="Uprooted Igorots Podcast">
+                <img src="assets/uip-cover.png" alt="Uprooted Igorots Podcast Producer">
               </div>
               <div class="col-md-6">
                 <div class="card-body">
@@ -108,20 +112,71 @@
             </div>
           </div>
         
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="assets/bfbl-site.png" alt="Build for Black Lives Icons">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Build for Black Lives Social & Outreach Design</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button type="button" class="btn btn-outline-dark">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="assets/chrisLogo.png" alt="Red Hat 2019">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Red Hat UI Internship</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button type="button" class="btn btn-outline-dark">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </section>
         <!-- End Projects -->
 
-        <!-- About -->
-    <footer>
-        <h3>Hope you enjoyed your stay <ion-icon name="happy-outline"></ion-icon></h3>
-      <h4>Interested in working together? <span>(let's connect!)</span></h4>
-      <p>shania.ambros@gmail.com <ion-icon name="copy"></ion-icon></p>
+        <!-- Start About -->
+        <section id="about">
+            <div class="blurb">
+            <h4>Hello, my name’s Shania<span>(she/her)</span></h4>
+            <p>I’m interested in designing the digital spaces for community-driven organizations. I value data, design, and social impact when working on a project. </p>
+            <p>As a Junior Web Design and Development student, I’m exploring pathways where I can design beautiful user interfaces for humanitarian technology.</p>
+
+            <ul><h4>Currently contributing to these spaces</h4>
+            <li><a href="hackbeanpot.com"><ion-icon name="smile-outline"></ion-icon> HackBeanpot 2021</a></li>
+            <li><a href="uprootedigorots.com"><ion-icon name="smile-outline"></ion-icon> Uprooted Igorots Podcast</a></li>
+            </ul>
+            </div>
+        <img src="assets/profile.jpg" alt="profile image" class="profile"/>
+        
+        </section>
+        <!-- About End -->
+
+        <!-- Footer -->
+    <footer id="footer">
+        <h4>Interested in working together? <span>(let's connect!)</span></h4>
+      
       <a href="https://linkedin.com/in/sambros"
         ><ion-icon name="logo-linkedin"></ion-icon> Linkedin </ion-icon
       ></a>
       <a href="https://dribbble.com/sambros"
         ><ion-icon name="logo-dribbble"></ion-icon> Dribbble </ion-icon></a> 
+        <a href="https://github.com/Ulam22"
+        ><ion-icon name="logo-github"></ion-icon> GitHub </ion-icon></a> 
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="locomotive-scroll.min.js"></script>
     
