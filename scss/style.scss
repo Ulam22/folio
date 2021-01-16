@@ -188,7 +188,7 @@ h3 {
   }
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 768px) {
   #about {
     .profile {
       position: relative;
@@ -197,6 +197,7 @@ h3 {
     .blurb {
       max-width: 90%;
     }
+  
   }
 
   #landing {
