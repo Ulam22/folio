@@ -11304,7 +11304,7 @@ fieldset:disabled .btn {
 
 @font-face {
   font-family: "Tropikal";
-  src: url(Tropikal-Bold.otf) format("otf");
+  src: url("/assets/Tropikal-Bold.otf") format("otf");
   font-weight: bold;
 }
 
@@ -11412,6 +11412,11 @@ h3, .h3 {
   padding: 10rem 0 5rem;
 }
 
+#landing .landing__content img {
+  max-width: 100%;
+  height: auto;
+}
+
 #landing .landing__content h3, #landing .landing__content .h3 {
   margin: auto;
   text-align: center;
@@ -11464,22 +11469,61 @@ h3, .h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20em 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15em 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: auto;
-  width: 70%;
+  max-width: 60%;
 }
 
 #about .blurb {
-  padding: 4em;
+  max-width: 60%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#about .blurb h3, #about .blurb .h3,
+#about .blurb h4,
+#about .blurb .h4 {
+  font-family: "Tropikal", Verdana, sans-serif;
+}
+
+#about .blurb span {
+  vertical-align: baseline;
+  font-size: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#about .blurb ul {
+  padding: 0;
+}
+
+#about .blurb ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #232323;
+}
+
+#about .blurb ul a:hover {
+  color: #3a4fcd;
+  font-weight: bold;
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+  #about .profile {
+    position: relative;
+    padding: 25px;
+  }
+  #about .blurb {
+    max-width: 90%;
+  }
 }
 
 .profile {
   height: 250px;
   border-radius: 50%;
-  position: relative;
 }
 
 footer {
