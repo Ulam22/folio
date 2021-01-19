@@ -72,6 +72,7 @@ a.btn {
   border: $border-style;
   background: transparent;
   font-family: $body-font;
+  color:$black;
 }
 
 a.btn:hover {
@@ -393,70 +394,6 @@ footer {
 // ======= Cases ======= //
 
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: $bg-color;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $accent-color;
-  border-radius: $border-rad;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $highlight;
-  border-radius: $border-rad;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  max-height: 100%;
-  max-width: 100%;
-  background: $bg-color;
-  box-sizing: border-box;
-  font-family: $body-font;
-}
-
-li {
-  list-style: none;
-}
-h4 {
-  font-family: $header-font;
-}
-a,
-a:visited {
-  text-decoration: none;
-  color: $black;
-}
-
-a:hover,
-a:focus {
-  font-weight: bold;
-  color: $highlight;
-}
-
-a.btn {
-  border: $border-style;
-  background: transparent;
-  font-family: $body-font;
-}
-
-a.btn:hover {
-  border: 1px solid $highlight !important;
-  background: $highlight !important;
-  color: $bg-color !important;
-}
-
-
 // ---------------------------------------- //
 //  Case Study                             //
 // --------------------------------------- //
@@ -521,6 +458,14 @@ article {
   border-top: $border-style;
   border-bottom: $border-style;
   padding: 1.7rem;
+   background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+.pagination-new {
+  border-top: $border-style;
+  border-bottom: $border-style;
+  padding: 1.7rem;
+  text-align: end;
    background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
 }
