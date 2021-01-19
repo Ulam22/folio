@@ -11684,7 +11684,6 @@ footer a {
   right: 0;
   bottom: 0;
   width: 100%;
-  pointer-events: none;
   font-family: "Tropikal", Verdana, sans-serif;
   margin: 0 25px 0 25px;
 }
