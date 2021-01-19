@@ -34,6 +34,7 @@
   <body>
       <!-- Landing start -->
     <section id="landing">
+      <div class="mobile-nav">
         <nav class="navbar sticky-top navbar-light navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#landing">SLSA</a>
@@ -46,6 +47,9 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#hacks">Hackathons</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#about">About</a></li>
               <li class="nav-item">
                 <a class="nav-link" href="https://drive.google.com/file/d/1OlWkSq9eWU7Qoy4E2g6cHjpxPuXMlwLd/view?usp=sharing">Resume</a></li>
@@ -53,6 +57,25 @@
           </div>
      </div>
           </nav>
+        </div>
+          <nav class="desktop-nav">
+            <a class="sidebar-name" href="#landing">SLSA</a>
+            <div class="menu">
+              <ul class="links">
+                <li>
+                  <a class="sb-link" href="#projects">Projects</a>
+                </li>
+                <li>
+                   <a class="sb-link" href="#hacks"><span class="badge bg-primary align-text-top">New</span> Hackathons </a>
+                </li>
+                <li>
+                  <a class="sb-link" href="#about">About</a></li>
+                  <li>
+                    <a class="sb-link" href="https://drive.google.com/file/d/1OlWkSq9eWU7Qoy4E2g6cHjpxPuXMlwLd/view?usp=sharing">Resume</a>
+                  </li>
+              </ul></div>
+          </nav>
+
         <div class="landing__content">
       <h3>Hello, my name is <a href="#about">Shania</a>.<br> Welcome to my space.</h3>
       
@@ -72,7 +95,8 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">HackBeanpot Core Member</h5>
+                  <h5 class="card-title">HackBeanpot Core</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Role: Social & Outreach Designer</h6>
                   <p class="card-text">Collaborating with the core team to identify HBP’s unique features and defining the next Hackathon theme.</p>
                   <button type="button" class="btn btn-outline-dark disabled">Coming soon</button>
                 </div>
@@ -87,9 +111,10 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">One Down Web Design Internship</h5>
+                  <h5 class="card-title">One Down</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Role: Web Designer</h6>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button type="button" class="btn btn-outline-dark">Read More</button>
+                  <a class="btn btn-primary" href="https://devpost.com/software/dovic" role="button" >Read More</a>
                 </div>
               </div>
             </div>
@@ -103,8 +128,9 @@
               <div class="col-md-6">
                 <div class="card-body">
                   <h5 class="card-title">Uprooted Igorots Podcast</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Role: </h6>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button type="button" class="btn btn-outline-dark">Read More</button>
+                  <a href="https://devpost.com/software/dovic" role="button" data-bs-toggle="button" class="btn">Read More</a>
                 </div>
               </div>
             </div>
@@ -117,9 +143,10 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">Build for Black Lives Social & Outreach Design</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button type="button" class="btn btn-outline-dark">Read More</button>
+                  <h5 class="card-title">Build for Black Lives Core</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Role: Social & Outreach Designer</h6>
+                  <p class="card-text">Designing a platform that supports Black Organizations, Businesses, and Creatives find volunteers to develop their digital spaces.</p>
+                  <a href="https://devpost.com/software/dovic" role="button" data-bs-toggle="button" class="btn">Read More</a>
                 </div>
               </div>
             </div>
@@ -133,9 +160,10 @@
               </div>
               <div class="col-md-6">
                 <div class="card-body">
-                  <h5 class="card-title">Red Hat UI Internship</h5>
+                  <h5 class="card-title">Red Hat Internship</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Role: UI Designer </h6>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <button type="button" class="btn btn-outline-dark">Read More</button>
+                  <a href="https://devpost.com/software/dovic" role="button" data-bs-toggle="button" class="btn">Read More</a>
                 </div>
               </div>
             </div>
@@ -145,34 +173,92 @@
         </section>
         <!-- End Projects -->
 
+        <!-- Start Hackathons -->
+        <section id="hacks" data-scroll-container>
+          <h2 data-scroll data-scroll-speed="1">Hackathons</h2>
+         
+  
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="assets/divoc.png" alt="DIVOC login page">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">DIVOC <span class="badge bg-primary align-text-top">winner</span> </h5>
+                    <p class="card-text">Our website helps users track their physical and mental health and rewards them for staying "on track".</p>
+                    <a href="https://devpost.com/software/dovic" role="button" data-bs-toggle="button" class="btn btn-outline-dark">See Devpost</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="assets/keshi.png" alt="Uprooted Igorots Podcast Producer">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Keshi <span class="badge bg-primary align-text-top">winner</span> </h5>
+                    <p class="card-text">This interactive prototype is a simplified design for a digital merchandising platform for the artist Keshi.</p>
+                    <a href="https://devpost.com/software/web-design-a1wirn" role="button" data-bs-toggle="button" class="btn btn-outline-dark">See Devpost</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+  
+
+  
+  
+          </section>
+
+        <!-- End Hackathons -->
+
         <!-- Start About -->
         <section id="about">
           <img src="assets/profile.jpg" alt="profile image" class="profile"/>
             <div class="blurb">
-            <h3>Hello, my name’s Shania <span>(she/her)</span></h3>
-            <p>I’m interested in designing the digital spaces for community-driven organizations. I value data, design, and social impact when working on a project. </p>
-            <p>As a Junior Web Design and Development student, I’m exploring pathways where I can design beautiful user interfaces for humanitarian technology.</p>
-
-            <ul><h4>Currently contributing to these spaces</h4>
+            <h3 class="desktop-blurb">Hello, my name’s Shania <span>(she/her)</span></h3>
+            <h4 class="mobile-blurb">Hello, I'm Shania! <span>(she/her)</span></h4>
+            <p>As a Web Design and Development student, I’m exploring pathways where I can design beautiful user interfaces for humanitarian technology. When I'm not working, I'm attempting to relearn Ibaloi and Ilokano. </p>
+<p>I love designing digital platforms for community-driven organizations. Each project I work on keeps data, design, and social impact in mind. </p>
+            <div class="wrap">
+              <div class="block"><h4>Current projects</h4>
+            <ul>
             <li><ion-icon name="heart-empty"></ion-icon> <a href="https://hackbeanpot.com/">HackBeanpot 2021 </a><ion-icon name="arrow-forward"></ion-icon></li>
             <li><ion-icon name="heart-empty"></ion-icon> <a href="https://uprootedigorots.com/"> Uprooted Igorots Podcast </a><ion-icon name="arrow-forward"></ion-icon></li>
             </ul>
             </div>
-        
+            <div class="block">
+        <h4>All my work</h4>
+        <ul>
+          <li><a href="https://devpost.com/Ulam22"
+            ><ion-icon name="heart-empty"></ion-icon> Devpost</a></li>
+          <li><a href="https://dribbble.com/sambros"
+        ><ion-icon name="logo-dribbble"></ion-icon> Dribbble </ion-icon></a> </li>
+          <li><a href="https://github.com/Ulam22"
+        ><ion-icon name="logo-github"></ion-icon> GitHub </ion-icon></a></li>
+          </ul>
+            </div>
+         </div>
+      
+      </div>
         </section>
         <!-- About End -->
 
         <!-- Footer -->
     <footer>
-        <h4>Interested in working together? <span>(let's connect!)</span></h4>
+        <h4>Interested in working together? <span class="connect">(let's connect!)</span></h4>
       
       <a href="https://linkedin.com/in/sambros"
         ><ion-icon name="logo-linkedin"></ion-icon> Linkedin </ion-icon
       ></a>
-      <a href="https://dribbble.com/sambros"
-        ><ion-icon name="logo-dribbble"></ion-icon> Dribbble </ion-icon></a> 
-        <a href="https://github.com/Ulam22"
-        ><ion-icon name="logo-github"></ion-icon> GitHub </ion-icon></a> 
+      
+        <a href="https://twitter.com/isuratmo"
+        ><ion-icon name="logo-twitter"></ion-icon> Twitter </ion-icon></a> 
+        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
