@@ -6,6 +6,7 @@
   font-weight: bold;
 }
 
+// _library.scss
 $body-font: "Roboto Condensed", sans-serif;
 $header-font: "Tropikal", Verdana, sans-serif;
 $bg-color: #f8f5f2;
@@ -52,7 +53,9 @@ body {
 li {
   list-style: none;
 }
-
+h4 {
+  font-family: $header-font;
+}
 a,
 a:visited {
   text-decoration: none;
@@ -255,6 +258,33 @@ h3 {
     .profile {
       display: none;
     }
+
+    .cases-body {
+      .mobile-warning {
+        display: unset;
+        text-align: center;
+        padding: 15em 0;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        overflow:hidden;
+        background: #dbc6b3;
+        h5 {
+          margin: auto;
+          margin: 1em;
+        }
+        
+      }
+      .case-navigation,
+      .article,
+      .intro,
+      .problem,
+      .process,
+      .card,
+      .pagination, footer {
+        display: none !important;
+      }
+    }
   }
 
   #landing {
@@ -278,13 +308,6 @@ h3 {
     }
     span {
       display: none;
-    }
-
-    .credit {
-      padding-top: 10px;
-      font-size: 14px;
-      font-family: $body-font;
-      font-style: italic;
     }
   }
 }
@@ -367,37 +390,130 @@ footer {
   }
 }
 
+// ======= Cases ======= //
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $bg-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $accent-color;
+  border-radius: $border-rad;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $highlight;
+  border-radius: $border-rad;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  max-width: 100%;
+  background: $bg-color;
+  box-sizing: border-box;
+  font-family: $body-font;
+}
+
+li {
+  list-style: none;
+}
+h4 {
+  font-family: $header-font;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: $black;
+}
+
+a:hover,
+a:focus {
+  font-weight: bold;
+  color: $highlight;
+}
+
+a.btn {
+  border: $border-style;
+  background: transparent;
+  font-family: $body-font;
+}
+
+a.btn:hover {
+  border: 1px solid $highlight !important;
+  background: $highlight !important;
+  color: $bg-color !important;
+}
+
+
 // ---------------------------------------- //
 //  Case Study                             //
 // --------------------------------------- //
+
 .case-nav {
-  padding: 1.2rem;
   display: flex;
   flex-wrap: row wrap;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.6rem;
   font-family: $header-font;
   li {
     display: inline-block;
+    padding-top: 1.2rem;
   }
   li:first-child {
     margin-right: 1.5rem;
   }
-}
-
-article {
-  padding-top:15rem;
-  width: 90vw;
-  margin:auto;
-}
-.intro {
-  h2 {
-    text-align:center;
+  a {
+    padding: 1.2rem;
   }
 }
 
-.progress {
-  background: $highlight;
+.case-navigation {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.banner {
+  padding-bottom: 1.8rem;
+
+  .card {
+    background: transparent;
+    border: none;
+    max-width: 65em;
+    margin: auto;
+    img {
+      width: 100%;
+      border: $border-style;
+      border-radius: $border-rad;
+    }
+  }
+}
+
+article {
+  padding-top: 5rem;
+  max-width: 70vw;
+  margin: auto;
+  
+}
+.intro {
+  h2 {
+    text-align: center;
+  }
+}
+.benchmark {
+  list-style-type: "→ ";
 }
 
 // Heading
@@ -405,4 +521,44 @@ article {
   border-top: $border-style;
   border-bottom: $border-style;
   padding: 1.7rem;
+   background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+.progress {
+  background: $highlight;
+}
+section {
+  padding: 2rem 0;
+  h4 {
+    margin: .8rem 0;
+  }
+}
+.gallery {
+  margin:auto;
+  //display: flex;
+  flex-flow: row wrap;
+ //max-width: 100vh;
+
+
+  img {
+height: 52vh;
+ 
+  }
+  
+}
+.problem {
+  flex-wrap: row wrap;
+  display: flex;
+}
+
+
+.bmList {
+  justify-content: space-between;
+  width: 40%;
+}
+
+// Temporary mobile warning
+.mobile-warning {
+  display: none;
 }
