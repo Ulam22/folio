@@ -11304,9 +11304,17 @@ fieldset:disabled .btn {
 }
 
 @font-face {
-  font-family: "Tropikal";
-  src: url("/assets/Tropikal-Bold.otf") format("otf");
-  font-weight: bold;
+  font-family: 'tropikalbold';
+  src: url("tropikal-bold-webfont.woff2") format("woff2"), url("tropikal-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'harmondSBdItCn';
+  src: url("harmond-sembditacond-webfont.woff2") format("woff2"), url("harmond-sembditacond-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* width */
@@ -11348,7 +11356,7 @@ li {
 }
 
 h4, .h4 {
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
 }
 
 a,
@@ -11363,11 +11371,11 @@ a:focus {
   color: #3a4fcd;
 }
 
-a.btn {
+a.btn, a.btn.btn-primary {
   border: 1px solid #232323;
   background: transparent;
   font-family: "Roboto Condensed", sans-serif;
-  color: #232323;
+  color: #232323 !important;
 }
 
 a.btn:hover {
@@ -11378,7 +11386,7 @@ a.btn:hover {
 
 .navbar-nav {
   width: 100%;
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -11412,24 +11420,24 @@ a.btn:hover {
 }
 
 .container-fluid .navbar-brand, .container-sm .navbar-brand, .container-md .navbar-brand, .container-lg .navbar-brand, .container-xl .navbar-brand, .container-xxl .navbar-brand {
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
   font-size: 2em;
 }
 
 h1, .h1 {
   left: 0;
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
   font-size: 1.2rem;
   padding: 20px;
 }
 
 h2, .h2 {
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
   font-size: 4em;
 }
 
 h3, .h3 {
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
   font-size: 3em;
 }
 
@@ -11534,7 +11542,7 @@ h3, .h3 {
 #about .blurb h3, #about .blurb .h3,
 #about .blurb h4,
 #about .blurb .h4 {
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
 }
 
 #about .blurb span {
@@ -11660,7 +11668,7 @@ footer {
 }
 
 footer h4, footer .h4 {
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
 }
 
 footer span {
@@ -11673,7 +11681,7 @@ footer a {
   padding: 0 20px;
   text-decoration: none;
   color: #232323;
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
 }
 
 .bg-primary {
@@ -11695,7 +11703,7 @@ footer a {
 .desktop-nav .sidebar-name {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
   position: fixed;
   margin: 15px 0;
   padding-left: 1rem;
@@ -11707,7 +11715,7 @@ footer a {
   right: 0;
   bottom: 0;
   width: 100%;
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
   margin: 0 25px 0 25px;
 }
 
@@ -11736,7 +11744,7 @@ footer a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.6rem;
-  font-family: "Tropikal", Verdana, sans-serif;
+  font-family: "Tropikal", "Harmond", Verdana, sans-serif;
 }
 
 .case-nav li {

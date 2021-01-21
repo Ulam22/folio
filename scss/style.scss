@@ -1,14 +1,28 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @font-face {
-  font-family: "Tropikal";
-  src: url("/assets/Tropikal-Bold.otf") format("otf");
-  font-weight: bold;
+  font-family: 'tropikalbold';
+  src: url('tropikal-bold-webfont.woff2') format('woff2'),
+       url('tropikal-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'harmondSBdItCn';
+  src: url('harmond-sembditacond-webfont.woff2') format('woff2'),
+       url('harmond-sembditacond-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
 
 // _library.scss
 $body-font: "Roboto Condensed", sans-serif;
-$header-font: "Tropikal", Verdana, sans-serif;
+$header-font: "Tropikal", "Harmond", Verdana, sans-serif;
 $bg-color: #f8f5f2;
 $accent-color: #cbcddd;
 $border-style: 1px solid #232323;
@@ -68,11 +82,11 @@ a:focus {
   color: $highlight;
 }
 
-a.btn {
+a.btn, a.btn.btn-primary  {
   border: $border-style;
   background: transparent;
   font-family: $body-font;
-  color:$black;
+  color:$black !important;
 }
 
 a.btn:hover {
