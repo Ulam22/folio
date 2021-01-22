@@ -11312,7 +11312,7 @@ fieldset:disabled .btn {
 
 @font-face {
   font-family: 'Harmond';
-  src: url("..assets/fonts/harmond-sembditacond-webfont.woff2") format("woff2"), url("..assets/fonts/harmond-sembditacond-webfont.woff") format("woff");
+  src: url("../assets/fonts/harmond-sembditacond-webfont.woff2") format("woff2"), url("../assets/fonts/harmond-sembditacond-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
