@@ -11840,14 +11840,10 @@ section h4, section .h4 {
   height: 52vh;
 }
 
-.problem {
-  -ms-flex-wrap: row wrap;
-      flex-wrap: row wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*.problem {
+  flex-wrap: column;
   display: flex;
-}
-
+}*/
 .bmList {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

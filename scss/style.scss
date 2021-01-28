@@ -168,6 +168,7 @@ h3 {
 #hacks {
   padding: 5rem 0;
   background-color: $accent-color;
+
   h2 {
     text-align: center;
     padding: 35px 0;
@@ -506,10 +507,10 @@ height: 52vh;
   }
   
 }
-.problem {
-  flex-wrap: row wrap;
+/*.problem {
+  flex-wrap: column;
   display: flex;
-}
+}*/
 
 
 .bmList {
